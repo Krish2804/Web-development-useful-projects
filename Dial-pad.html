@@ -59,7 +59,6 @@
             margin: 10px;
             color: white;
             border-radius: 4px;
-            float: left;
             cursor: pointer;
         }
 
@@ -128,22 +127,18 @@
             if (k1 == 0) {
                 k2 = parseInt(k1 * 10) + parseInt(k3)
                 k1 = k1 + 1
-//                 document.getElementById("p1").innerHTML = k1
             }
             else {
                 k2 = parseInt(k2 * 10) + parseInt(k3)
                 document.getElementById("output").innerHTML = k2
                 k1 = k1 + 1
-//                 document.getElementById("p1").innerHTML = k1
             }
         }
         function back() {
             if (k1 > 0) {
                 k2 = parseInt(k2 - k3) / parseInt(10)
-                // k2 = k2 - parseInt(k2.charAt(k1 - 1)) / 10
                 document.getElementById("output").innerHTML = k2
                 k1 = k1 - 1
-//                 document.getElementById("p1").innerHTML = k1
             }
             else {
                 k1 = parseInt(k2 - k3) / parseInt(10)
